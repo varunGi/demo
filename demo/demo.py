@@ -8,30 +8,19 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.set_page_config(
-    page_title="Hello"
-)
 
-st.write("# Welcome to Streamlit! 👋")
+with st.sidebar:
+    st.image("https://www.onepointltd.com/wp-content/uploads/2020/03/inno2.png")
+    st.title("AutoML")
+    choice = st.radio("Navigation",
+                      ["Introduction", "Upload", "Cleaning", "Profiling", "Data visualization", "Modelling",
+                       "Download"])
+if choice == "Introduction":
 
-st.sidebar.success("Select a demo above.")
-
-st.markdown(
-    """
-    Streamlit is an open-source app framework built specifically for
-    Machine Learning and Data Science projects.
-    **👈 Select a demo from the sidebar** to see some examples
-    of what Streamlit can do!
-    ### Want to learn more?
-    - Check out [streamlit.io](https://streamlit.io)
-    - Jump into our [documentation](https://docs.streamlit.io)
-    - Ask a question in our [community
-        forums](https://discuss.streamlit.io)
-    ### See more complex demos
-    - Use a neural net to [analyze the Udacity Self-driving Car Image
-        Dataset](https://github.com/streamlit/demo-self-driving)
-    - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-"""
-)
-
-st.write("Complete Done!")
+    st.write("# Welcome to machine learning project platform! 👋")
+    st.markdown("""
+    At our website, we offer a comprehensive suite of tools and features to assist you in your data-driven projects. Whether you're a data enthusiast, a business analyst, or a machine learning practitioner, our platform is designed to streamline your workflow and help you make insightful decisions from your data.
+    
+    ### *Upload:*
+    In this section, you can effortlessly upload your dataset and explore its contents. Once your data is uploaded, our platform provides a detailed description of the dataset, highlighting key statistics, such as the number of rows, columns, and unique values. You can quickly identify potential data quality issues by checking for the presence of duplicate records and missing values in each column.
+    """)
