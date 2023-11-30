@@ -9,8 +9,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.set_page_config(
-    page_title="Hello",
-    page_icon="👋",
+    page_title="Hello"
 )
 
 st.write("# Welcome to Streamlit! 👋")
