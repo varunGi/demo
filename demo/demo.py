@@ -14,7 +14,7 @@ ad_code=""" <script async src="https://pagead2.googlesyndication.com/pagead/js/a
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
      """
-components(ad_code, height=600)
+components.html(ad_code, height=600)
 st.write("Hello world")
 # st.write(<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5056338602918094" crossorigin="anonymous"></script>,)
 st.write("over end")
