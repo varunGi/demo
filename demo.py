@@ -1,7 +1,8 @@
 import streamlit as st
 import streamlit.components.v1 as components
 st.title("My Streamlit App")
-ad_code=""" <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5056338602918094"
+ad_code=""" <head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5056338602918094"
      crossorigin="anonymous"></script>
 <!-- ad2 -->
 <ins class="adsbygoogle"
@@ -13,6 +14,7 @@ ad_code=""" <script async src="https://pagead2.googlesyndication.com/pagead/js/a
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+</head>
      """
 components.html(ad_code)
 st.write("Hello world")
